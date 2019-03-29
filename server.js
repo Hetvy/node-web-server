@@ -45,6 +45,13 @@ app.get('/about',(req,res) =>{
     })
 });
 
+app.get('/project',(req,res) =>{
+    res.render('project.hbs',{
+        pageTitle:'project page'
+
+    })
+});
+
 app.get('/bad',(req,res) => {
     res.send({
         errorMessage: 'error has occured'
